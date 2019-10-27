@@ -49,6 +49,7 @@ export class ProductosService {
     const filterValue = termino.toLowerCase();
 
     this.productos.forEach(prod => {
+      
       const tituloLower = prod.titulo.toLowerCase();
 
       if (prod.categoria.includes(filterValue) || tituloLower.includes(filterValue)) {
